@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #9d50bb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Bad Script', cursive;
+}
+.todo_app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 5rem;
+}
+.title {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+form {
+  height: 3rem;
+}
+.input_section input {
+  width: 30rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: none;
+  font-size: 16px;
+  padding: 0 10px;
+  font-family: 'Bad Script', cursive;
+}
+.input_section button {
+  width: 4rem;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #72efdd;
+  color: #14213d;
+  font-size: 1rem;
+}
+
+.todos {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.topic {
+  padding-top: 5rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 25px;
+  color: #72efdd;
+}
+.todo {
+  display: flex;
+  width: 34rem;
+  background-color: #72efdd;
+  margin-top: 2rem;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+}
+.todo p {
+  padding: 10px;
+}
+.todo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.trash,
+.done {
+  display: flex;
+  color: #fff;
+  height: 100%;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.trash {
+  background-color: tomato;
+}
+.trash:hover {
+  background-color: rgb(128, 52, 38);
+  color: #000;
+}
+.done {
+  background-color: #14213d;
+}
+.done:hover {
+  background-color: #0e349c;
+}
+.error {
+  color: tomato;
+  display: none;
+}
+.completed {
+  text-decoration: line-through;
+}
